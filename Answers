@@ -33,4 +33,68 @@ Ex- <a> , <br> , <span>
 Block elements: They consume the entire width available irrespective of their sufficiency. They always start in a new line and have top and bottom margins. It does not contain any other elements next to it.
 Ex- <h1> , <div> , <p>
 
-9. 
+9. The <link> tag is used to establish a relationship between the current document and some external resources that are associated with the webpage.
+The resource could be a CSS file, an icon used in the site, a manifest, etc. It has certain attributes like href, media, rel, size, and type. This tag is only used in the <head> section of an HTML document.
+The <a> tag, also known as the anchor tag, establishes a hyperlink to an external or internal document of HTML, an address like email or telephone, and some kind of external URL address.
+Some of the commonly used attributes are href, target, download, and ping. This tag is used in the <body> section of an HTML document.
+
+10. HTML-
+HTML is the primary language for developing web pages.
+It does not support audio and video without the use of a flash player.
+It uses cookies to store temporary data.
+Vector graphics are possible with the help of technologies like VML, Silverlight, Flash, etc.
+It does not allow JavaScript to run within the web browser.
+It does not allow drag and drop effects.
+It is not possible to create shapes like circles, rectangles, triangles.
+It works with all old browsers.
+Doctype declaration is too long and complicated.
+Character encoding in HTML is too long.
+
+HTML5-
+It is the 5th version of HTML .
+It supports audio and video controls with the use of <audio> and <video> tags.
+It uses SQL databases and application cache to store offline data.
+Allows JavaScript to run in the background.
+Vector graphics is an integral part of HTML5 like SVG and canvas.
+It allows drag and drop effects.
+HTML5 allows to draw shapes like circle, rectangle, triangle etc.
+It is supported by all new browsers like Firefox, Mozilla, Chrome, Safari, etc.
+HTML5 language is more mobile-friendly.
+Doctype declaration is quite simple and easy.
+Character encoding is simple and easy.
+
+11. HTML forms are a crucial part of an HTML document that allows user interaction. They are used to collect user input that is most often sent to a server for processing. The <form> element in HTML is used to create a form. A form can contain various types of input elements, such as text fields, checkboxes, radio buttons, submit buttons, etc.
+Forms are generally used when you want to collect data from the user.
+
+12. HTML provides various types of input fields through the <input> element, each with its own purpose. Here are some commonly used types:
+- Text: The ‘text’ input field is used to enter single-line text.
+- Color: The <input type="color"> is used for input fields that should contain a color.
+There are other as well -
+<input type="email">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+
+13. HTML <figure> Tag:
+The <figure> tag in HTML5 is used to add self-contained content like illustrations, diagrams, photos, or code listings in a document. It is related to the main flow, but it can be positioned anywhere in the document and if removed, it should not affect the flow of the document1.
+It is used to semantically organize the content of images, videos, audios, or even charts or tables, block of codes in the HTML document.
+It contains mostly two tags: img src and figcaption.
+
+HTML <img> Tag1:
+The <img> tag is used to add an image or to set the background in a webpage/website. Images are linked to web pages by using the <img> tag which holds space for the image.
+It contains the following attribute values: src and alt.
+
+14. Meta tags are elements within your HTML code that aren’t visible to the user and yet play a crucial role in your SEO performance and the user experience you provide. They are important because they allow search engines to understand what your web page content is about. It gives info about meta data.
+
+Title Tag: The title tag is the title text that is shown in search engine listings. It is only visible to users on the search results, but not within the page.
+Meta Description: The meta description tag is where you would want to put your site’s summary. It provides a brief overview of the content found on your webpage.
+Meta Keywords: The meta keywords tag is where you put all of the keywords you use on your site. These keywords help search engines understand the topics your content covers.
+Meta Robots Tag: The meta robots tag tells search engines if and how they should crawl your web pages.
+Viewport Meta Tag: This tag is used to control how your webpage scales across different devices.
+Author Meta Tag: This tag allows you to specify the author of the webpage.
+Charset Meta Tag: This tag is used to indicate the character encoding for the HTML document.
+HTTP-EQUIV Meta Tag: This attribute provides an HTTP header for the information/value of the content attribute.
+
+15. Semantic elements in HTML are those that clearly describe their meaning in a human- and machine-readable way. They are elements of code that use words to clearly represent what that element contains. 
+Ex : <footer> , <form> , <table> , <details> , <header> , <figure>
