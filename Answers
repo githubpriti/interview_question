@@ -1,5 +1,36 @@
 HTML Answers
 
 1. Tags are the starting and ending parts of an HTML element. They begin with < symbol and end with > symbol. Whatever written inside < and > are called tags.
-   Elements enclose the contents in between the tags. They consist of some kind of structure. It generally consists of a start tag, content and an end tag.
-   It is used to define the character of an HTML element. It always placed in the opening tag of an element. It generally provides additional styling (attribute) to the element.
+Elements enclose the contents in between the tags. They consist of some kind of structure. It generally consists of a start tag, content and an end tag.
+It is used to define the character of an HTML element. It always placed in the opening tag of an element. It generally provides additional styling (attribute) to the element.
+
+2. HTML entities are used to display reserved, special or invisible characters in HTML. These are particularly useful when you want to include symbols like < (less than) or > (greater than) in your text, as the browser might confuse them with tags.
+
+Here’s an example of how you might use an HTML entity:
+<p>This is a &lt;p&gt; tag.</p>
+In the above example, &lt; and &gt; are HTML entities representing the less than and greater than symbols respectively. There are many more HTML entities.
+
+3.There are three types of lists:
+-An unordered list starts with the <ul> tag. Each list item starts with the <li> tag. The list items will be marked with bullets by default.
+-An ordered list starts with the <ol> tag. Each list item starts with the <li> tag. The list items will be marked with numbers by default.
+-A description list is a list of terms, with a description of each term. The <dl> tag defines the description list, the <dt> tag defines the term , and the <dd> tag describes each term.
+
+4.The id attribute is used to identify a unique HTML element, while the class attribute is used to specify a group of elements that share the same style or behavior.
+The id attribute must have a unique value in the whole document, while the class attribute can have the same value for multiple elements.
+The id attribute must not contain whitespace, while the class attribute allows space-separated values.
+The id attribute can only be applied to one element in a page, while the class attribute can be applied to several elements on a single page
+
+5. The formatting can be used to set the text styles (like – bold, italic, or emphasized, etc.), highlight the text, make text superscript and subscript, etc.
+ex of formatting tag - <b> <strong> <i> <em> <mark>
+
+6. The <!DOCTYPE html> declaration defines that this document is an HTML5 document. It is used to inform the browser about the version of HTML used in the document.
+
+7. The <head> element contains meta-information about the HTML page.
+The <body> element defines the document's body and is a container for all the visible contents, such as headings, paragraphs, etc.
+
+8. Inline elements: Inline elements occupy only enough width that is sufficient to it and allows other elements next to it which are inline. Inline elements don’t start from a new line and don’t have top and bottom margins as block elements have.
+Ex- <a> , <br> , <span>
+Block elements: They consume the entire width available irrespective of their sufficiency. They always start in a new line and have top and bottom margins. It does not contain any other elements next to it.
+Ex- <h1> , <div> , <p>
+
+9. 
