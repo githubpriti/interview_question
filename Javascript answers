@@ -1,0 +1,88 @@
+1. Primitive data type - Anything which has single value.They are immutable, meaning they cannot be changed once they are created. Here are types of primitive datatype - 
+1. Number - In this there is no such type like integer, decimal all are numbers only. 
+2. STring -  Anything inside  " " or ' ' will be treated as string.
+3. Undefined: The meaning of undefined is ‘value is not assigned.
+4. Boolean: This data type can accept only two values i.e., true(1) and false(2).
+5. Null: This data type can hold only one possible value that is null
+6. BigInt
+7. Symbol
+
+2. Primitive Data Types:
+Primitive data types are fundamental types of data structures that store data of only one type1.
+Ex include integer, float, character, and pointer.
+These fundamental data types can hold a single type of value. For ex, an integer variable can hold an integer type of value, a float variable can hold a floating type of value, and so on1.
+Primitive data types are predefined in programming languages like Java2.
+A primitive type always has a value and cannot be NULL.
+
+Non-Primitive Data Types/objects:
+
+Non-primitive data types are user-defined and can store data of different types in a single entity1.
+Examples include Array, Object, Stack, Queue, Tree, and Graph1.
+Non-primitive data types can consist of a NULL value1.
+In programming languages like Java, non-primitive types are created by the programmer and are not predefined (except for String).
+
+3. Null:
+Null is used to represent an intentional absence of value12.
+It represents a variable whose value is undefined2.
+It accepts only one value, which is null2.
+Null is converted to zero (0) while performing primitive operations2.
+
+Undefined:
+Undefined means a variable has been declared but has not yet been assigned a value12.
+It is a type itself.
+Undefined is converted to NaN while performing primitive operations2.
+
+4. In JavaScript, both == and === are comparison operators. However, they work differently.
+1. Double equals(==): It compares two values for equality, and if they are not of the same data type. JavaScript tries to convert them to a common type.
+ex - console.log(21 == '21'); // true
+console.log(true == 1); // true
+
+2. Triple Equals (===): Known as the strict equality operator1. It checks for equality of both value and data type234. If the values being compared are not of the same data type, it does not attempt to convert them and returns false.
+ex - console.log(5 === '5'); // false
+console.log(true === 1); // false
+
+5.Implicit Type Coercion:
+Implicit type coercion refers to the process of automatic or implicit conversion of values from one data type to another1234.
+This includes conversion from Number to String, String to Number, Boolean to Number, etc. when different types of operators are applied to the values1.
+ex -  number to string var x = 10 + '20'; // Output: '1020'
+ex-  string to number var x = 10 * '5'; // Output: 50
+
+6. In JavaScript, NaN stands for “Not a Number”. It is a property of the Number object and represents a value that is not a valid number.
+NaN is usually produced as a result of an operation that cannot produce a meaningful result. For example, when you try to parse a string that doesn’t represent a number into an integer, or when you attempt to perform mathematical operations with non-numeric operands.
+ex-console.log(Math.sqrt(-1)); // NaN
+console.log(0 * Infinity); // NaN
+
+7. 
+
+8. In JavaScript, “strict mode” is a feature that allows you to opt into a restricted variant of the language. It was introduced in ECMAScript. When you use strict mode, the JavaScript engine enforces a stricter set of rules and throws more errors when you violate them.
+To invoke strict mode, you add the statement "use strict"; at the beginning of a script or a function. Here are some key points about strict mode:
+It helps you write cleaner code, like preventing you from using undeclared variables3.
+It eliminates some JavaScript silent errors by changing them to throw errors4.
+It fixes mistakes that make it difficult for JavaScript engines to perform optimizations4.
+ex - "use strict";
+function myFunction() {
+    y = 3.14; // This will cause an error because y is not declared
+}
+
+9. Hoisting- When you can access anything before it is declared. Hoisting is a way of how javascript behaves and it is a way how it collects references about declared variables.
+ex- console.log(name);
+sum();
+var name = "priti";
+function sum(){
+    console.log("hello world");
+} ;
+//it will print undefined,hello world
+
+Variable Hoisting:
+As you see in the above ex. when the variable was first accessed before its declaration it will give an undefined value. This will work in the case of var only, not in the case of let and const. Hence when the variable is used before its declaration it has an undefined value and after its declaration, the value assigned is used.
+Function Hoisting:
+As you see in the above ex. when the function was accessed before its declaration, it will print the assigned value. In function hoisting, the entire function body is stored in the memory and hence we can invoke the function before the actual declaration.
+
+10. The Temporal Dead Zone (TDZ) is a concept in JavaScript related to the let and const keywords. It refers to the period from the start of the block (where let or const is declared) until the declaration is executed1. During this period, the variable is in scope but not initialized, and trying to access it will result in a ReferenceError
+ex- console.log(varNumber); // undefined
+console.log(letNumber); // Throws a ReferenceError: letNumber is not defined
+
+var varNumber = 1;
+let letNumber = 1;
+letNumber is in the Temporal Dead Zone from the start of its scope until it’s declared.
+
