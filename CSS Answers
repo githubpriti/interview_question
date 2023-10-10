@@ -1,0 +1,96 @@
+1. Separation of Content and Style: CSS allows for the separation of the visual presentation of a site from the content, enhancing maintainability. 
+Consistency: CSS ensures consistent styling across an entire website or multiple pages. By creating a single external CSS file and linking it to multiple web pages, you ensure a uniform look and fee.
+Faster Loading Times: External CSS files can be cached by web browsers, allowing them to load faster on subsequent visits2.
+Responsive Design: With CSS, you can create responsive web designs that adapt to different screen sizes and devices2.
+Ease of Maintenance: Modifying the appearance of a website is more straightforward with CSS. You can quickly make changes to fonts, colors, and layouts by updating a few lines of code in the CSS file2.
+Accessibility: CSS allows developers to improve web accessibility by controlling the presentation of content2.
+Print-Friendly Pages: CSS can be used to create printer-friendly versions of web pages.
+Less Code: CSS enables you to use less code, which can result in faster page speed.
+
+2. 
+Browser Incompatibility: CSS can create confusion among web browsers. What works with one browser might not always work with another.
+Security: There exists a scarcity of security with CSS1.
+Complexity for Beginners: The programming language world can be complicated for non-developers and beginners.
+Cross-Browser Issues: Implementing initial CSS changes on a website is accessible on the developer’s end.
+Please note that despite these limitations, CSS is widely used due to its advantages such as control over various style elements and functionalities, simplification of website development and maintenance, and device-friendly changes1.
+
+3.CSS is used for styling the look and formatting of a document written in HTML. There are three ways to add/link CSS in HTML
+
+1.Inline CSS: Styles added directly to the HTML element.An inline CSS uses the style attribute of an HTML element. Ex -<h1 style="color:blue;">A Blue Heading</h1>
+2.Internal CSS: Styles defined at the head section of the document, within a <style> element.ex- 
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+</style>
+</head>
+3.External CSS: An external style sheet is used to define the style for many HTML pages.
+To use an external style sheet, add a link to it in the <head> section of each HTML page:
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>This is a heading</h1>
+</body>
+
+"styles.css":
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+
+4. CSS selectors are used to “find” or select HTML elements you want to style.Types of selectors:
+1.Simple Selectors: Select elements based on name, id, class1.
+
+Element Selector: Selects HTML elements based on the element name1. For ex, p { text-align: center } selects all <p> elements.
+Id Selector: Uses the id attribute of an HTML element to select a specific elemen1. For ex, #para1 { text-align: center; color: red; } selects the HTML element with id="para1".
+Class Selector: Selects HTML elements with a specific class attribute1. For example, .center { text-align: center; color: red; } selects all HTML elements with class="center".
+
+2.Combinator Selectors: Select elements based on a specific relationship between them1.
+3.Pseudo-class Selectors: Select elements based on a certain state1.
+4.Pseudo-elements Selectors: Select and style a part of an element1.
+5.Attribute Selectors: Select elements based on an attribute or attribute value1.
+6.Universal Selector: The universal selector (*) selects all HTML elements on the p.
+
+5.
+1. Compatibility and Design: CSS is capable of positioning texts and objects, while CSS3, being an advanced version, is capable of making the web page more attractive and takes less time to create1. CSS3 is backward compatible with CSS1.
+2. Responsive Design: CSS does not support responsive design, but CSS3, being the latest version, does1.
+3. Modules: CSS cannot be split into modules, whereas CSS3 can be broken down into modules1.
+4. Speed: CSS is slower compared to CSS3 which is faster1.
+5. Media Queries: CSS does not support media queries. But CSS3 supports media queries1.
+
+
+6. 
+In CSS, comments are used to add explanatory notes to the code or to prevent the browser from interpreting specific parts of the style sheet.
+1. Single-line comments: These start with // and end at the end of the line2. However, this type of comment is not standard and may not work in all browsers.
+2. Multi-line comments: These start with /* and end with */2. They can span multiple lines.
+
+7.CSS units are used to specify the size of elements in CSS. There are three main types of CSS units1:
+
+Absolute Units: These are fixed-length units and are not relative to any other styles. They include:
+
+px: Pixels
+pt: Points
+pc: Picas
+in: Inches
+cm: Centimeters
+mm: Millimeters
+
+Relative Units: These units specify a length relative to another length property. They include:
+
+em: Relative to the font-size of the element
+rem: Relative to font-size of the root element
+%: Relative to the parent element
+ex: Relative to the x-height of the current font (rarely used)
+ch: Relative to the width of the “0” (zero)
+fr: Represents a fraction of the free space in the grid container
+
+Viewport Units: These units are relative to the size of the viewport (the browser window size). They include:
+
+vw: Relative to 1% of the width of the viewport
+vh: Relative to 1% of the height of the viewport
+vmin: Relative to 1% of viewport’s smaller dimension
+vmax: Relative to 1% of viewport’s larger dimension
+
+8.  
