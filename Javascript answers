@@ -118,5 +118,254 @@ syntax -  (function () {
 
 Function Expressions: A Function Expression is a Function that is used as an expression1. The first part of the IIFE contains a Function Expression while the final part invokes it immediately1.
 
+15. In the context of programming, particularly in JavaScript, HOF stands for Higher-Order Functions. A Higher-Order Function is a regular function that takes one or more functions as arguments and/or returns a function as a value.
 
-15. 
+16. Map: The map() function creates a new array by transforming every element in an existing array individually. It applies a provided function to each element in the array and returns a new array with the results1. 
+ex - const numbers = [1, 2, 3, 4];
+const doubled = numbers.map(item => item * 2);
+console.log(doubled); // [2, 4, 6, 8]
+
+Filter: The filter() function creates a new array by removing elements that don’t satisfy a certain condition. It applies a provided function to each element in the array and returns a new array with only the elements for which the function returned true1.
+ex - const numbers = [1, 2, 3, 4];
+const evens = numbers.filter(item => item % 2 === 0);
+console.log(evens); // [2, 4]
+
+Reduce: The reduce() function takes all of the elements in an array and reduces them into a single value. It applies a provided function to each element in the array, progressively accumulating a result
+
+17. In javascript, this is a keyword that refers to an object. Which object depends on how this is being invoked (used or called) . This keyword refers to different objects depending on how it is used.
+ex - let info = {
+        name: 'Mahashay',
+        location : 'New-Delhi',
+        dob : '1999',
+        displayInfo : function(){
+            return this.name + " born at " + this.location + " in " + this.dob;
+        }
+    }
+console.log(info.displayInfo());  //Mahashay born at New-Delhi in 1999
+
+18. In JavaScript, the window object represents an open window in a browser1. It’s a global object, and all global JavaScript objects, functions, and variables automatically become members of the window object2.
+1. Global Scope: All global variables are properties of the window object, and all global functions are methods of the window object2. Even the document object (of the HTML DOM) is a property of the window object2.
+ex let globalVar = "Hello, World!";
+console.log(window.globalVar); // "Hello, World!"
+2. Window Size: The window object has properties like innerHeight and innerWidth that can be used to determine the size of the browser window2.
+ex -  let w = window.innerWidth;
+let h = window.innerHeight;
+3. Window Methods: The window object has various methods like open(), close(), moveTo(), and resizeTo() that can be used to manipulate the browser window.
+// Open a new window
+let newWindow = window.open();
+// Close the new window
+newWindow.close();
+4.Frames and Iframes: If a document contains frames (<iframe> tags), the browser creates one window object for the HTML document, and one additional window object for each frame1.
+5. Other Properties and Methods: The window object has numerous other properties and methods that provide information about the browser window and allow you to control it1.
+
+19.call(): The call() method is used to call a function with a given this value and arguments provided individually1. 
+Here’s an example:
+function Product(name, price) {
+  this.name = name;
+  this.price = price;
+}
+
+function Food(name, price) {
+  Product.call(this, name, price);
+  this.category = 'food';
+}
+
+console.log(new Food('cheese', 5).name);
+// expected output: "cheese"
+
+apply(): The apply() method is similar to call(), but it takes an array of arguments1. 
+Here’s an example:
+const numbers = [5, 6, 2, 3, 7];
+const max = Math.max.apply(null, numbers);
+console.log(max);
+// expected output: 7
+
+bind(): The bind() method creates a new function and when that new function is called it sets the this keyword to the first argument which is passed to the bind method.
+ex: let nameObj = { name: "Tony" }
+let PrintName = { 
+    name: "steve", 
+    sayHi: function () { 
+        console.log (this.name); 
+    } 
+}
+let HiFun = PrintName.sayHi.bind (nameObj);
+
+HiFun (); // Output: Tony
+
+20. In JavaScript, a Regular Expression (RegEx) is an object that describes a sequence of characters used for defining a search pattern1. Regular expressions allow developers to match strings against a pattern, extract submatch information, or simply test if the string conforms to that pattern2.
+In this example, /w3schools/i is a regular expression. w3schools is the pattern (to be used in a search)i is a modifier (modifies the search to be case-insensitive).
+
+21. Currying in JavaScript is an advanced technique of working with functions1. It is a transformation of functions that translates a function from callable as f(a, b, c) into callable as f(a)(b)(c)1. Currying doesn’t call a function, it just transforms it.
+
+22.Scope: Scope in JavaScript determines the accessibility (visibility) of variables, functions, and objects in some particular part of your code during runtime1. Scope simply means anything written inside { }. It always comes up with que i.e. "What it is that we are looking for things".
+The scope chain in javascript is lexically defined, which means that we can see what the scope chain will be by looking at the code. At the top of the scope chain is the global scope, which is the window object in the browser. Besides the global scope, functions have their own scoping of variables.
+
+23. A closure in JavaScript is a feature where an inner function has access to the outer (enclosing) function’s variables—scope chain12. The closure has three scope chains3:
+It has access to its own scope—variables defined between its curly brackets.
+It has access to the outer function’s variables.
+It has access to the global variables3.
+A closure is created every time a function is created, at function creation time.
+
+24.A callback function in JavaScript is a function that is passed as an argument to another function and is executed after the main function has finished its execution. This technique allows a function to call another function.
+ex- function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+function myCalculator(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+}
+
+myCalculator(5, 5, myDisplayer);
+In the example above, myDisplayer is the callback function. It is passed to myCalculator() as an argument1. When myCalculator finishes its calculation, it calls myDisplayer with the result of the calculation1.
+
+25. Memoization in JavaScript is an optimization technique that stores the results of function calls in a temporary data structure and then retrieves the results whenever the stored result is needed in the program1. It is a way to remember the result of a function call for a specific set of inputs, and if the function is called again with the same inputs, the cached result is returned instead of recomputing the result1.
+
+26. The Document Object Model (DOM) is a programming interface for HTML and XML documents12. It defines the logical structure of documents and the way a document is accessed and manipulated1.
+
+In other words, the DOM represents the structure of a document, such as the HTML representing a web page, in memory2. It allows scripts or programming languages to dynamically access and update the content, structure, and style of a document31.
+
+ex- <body>
+
+<h2>DOM</h2>
+<p>Hello World!</p>
+
+<script>
+var x = document.body.childNodes;
+document.getElementById("demo").innerHTML = x.length;
+</script>
+
+</body>
+
+27. Document Object Model (DOM): The DOM is a programming interface for HTML and XML documents1. It allows you to create, manipulate, or delete elements from the document1. It defines the logical structure of documents and the way a document is accessed and manipulated1. With the help of DOM, the webpage can be represented in a structured hierarchy, i.e., you can easily access and manipulate tags, IDs, classes, attributes, or elements of HTML using commands or methods provided by the Document object1.
+Browser Object Model (BOM): The BOM is a browser-specific convention referring to all the objects exposed by the web browser1. The BOM allows JavaScript to interact with the browser1. The window object represents a browser window and all its corresponding features1. A window object is created automatically by the browser itself1.
+
+28. Client-Side JavaScript: 
+Client-side JavaScript is run on the client’s machine, which is the browser4.
+It enables web pages on browsers to run active online content5.
+The source code is visible to the user1.
+It is used to manipulate and modify the user interface and interact with server-side scripts3.
+
+Server-Side JavaScript:
+Server-side JavaScript is run on the web server4.
+It enables back-end access to databases, file systems, and servers5.
+The source code is not visible to the user because its output is an HTML page1.
+It is used to create dynamic pages, retrieve and generate content for dynamic pages1.
+
+29. An arrow function in JavaScript is a syntactically compact alternative to a regular function1. It was introduced in ES6 and provides a simple and shorter way to create functions23. 
+ex- const multiply = (num1, num2) => num1 * num2;
+
+Syntax: Arrow functions have a simpler and more concise syntax compared to regular functions. For ex, a regular function is defined as function functionName() { ... }, while an arrow function is defined as const functionName = () => { ... }.
+Arguments object: Regular functions have an arguments object which contains the arguments passed to the function when called2. However, this object does not exist in arrow functions2
+Constructibility: Regular functions created using function declarations or expressions are ‘constructible’ and ‘callable’. They can be called using the ‘new’ keyword. However, arrow functions are only ‘callable’ and not constructible3.
+
+30. Rest Operator:
+The rest operator is used to collect the rest of some specific user-supplied values into a JavaScript array.
+It is used in function definitions to capture an indefinite number of arguments as an array.
+It is typically used in function declarations/definitions.
+ex: function myBio(firstName, lastName, ...otherInfo) {
+  return otherInfo;
+}
+myBio("Oluwatobi", "Sofela", "CodeSweetly", "Web Developer", "Male"); 
+// The invocation above will return: ["CodeSweetly", "Web Developer", "Male"]
+
+Spread operator: 
+The spread operator is used to expand iterables (like arrays, objects, strings) into individual elements1.
+It is used where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected2.
+It is typically used in function calls or array/object literals1.
+
+ex- function myBio(firstName, lastName, company) {
+  return `${firstName} ${lastName} runs ${company}`;
+}
+myBio(...["Oluwatobi", "Sofela", "CodeSweetly"]); 
+// The invocation above will return: “Oluwatobi Sofela runs CodeSweetly”
+
+31.A Promise in JavaScript is a special object that links the “producing code” and the “consuming code” together1. It’s a proxy for a value not necessarily known when the promise is created2. It allows you to associate handlers with an asynchronous action’s eventual success value or failure reason.
+ex - let myPromise = new Promise(function(myResolve, myReject) {
+  // "Producing Code" (May take some time)
+  myResolve(); // when successful
+  myReject(); // when error
+});
+
+32.The JS call stack is a data structure that keeps track of information on the functions being called and executed. When a function is called from the script it gets added to the call stack. If another function is called from inside that function it gets added on top of the current function. This stacking of functions goes on until there is no function call left. Once the function is executed then it is popped out from the stack and execution continues from where it was left. It follows the LIFO, i.e.(Last In First Out)principle. It is used to maintain the Order of execution contexts.
+
+33. Persistence: Data stored in Local Storage persists even after the browser is closed, while data stored in Session Storage is only available for the duration of the current session124. In other words, Session Storage data is deleted when the browser tab is closed13.
+Scope: Both Local Storage and Session Storage are scoped to the document origin, but Session Storage is also scoped to the current window or tab1. This means that two tabs from the same website will have two separate Session Storages, but they share the same Local Storage1.
+Use Cases: Local Storage is useful for storing data that you want to persist across multiple sessions or visits, such as user preferences or settings2. On the other hand, Session Storage is useful for storing data that’s relevant for one session, like a user’s input in a form during a single session2
+
+34. setTimeout is a method that allows you to run a function once after a specified delay12.
+The syntax is: let timerId = setTimeout(func | code, [delay], [arg1], [arg2], ...).
+The first parameter is a function to be executed or a string of code (not recommended)2.
+The second parameter indicates the number of milliseconds before execution12.
+Additional arguments can be passed to the function2.
+
+ex- function sayHi() {
+  alert('Hello');
+}
+setTimeout(sayHi, 1000); // Alerts "Hello" after 1 second
+
+setInterval is a method that allows you to run a function repeatedly, starting after the interval of time, then repeating continuously at that interval12.
+The syntax is similar to setTimeout: let timerId = setInterval(func | code, [delay], [arg1], [arg2], ...).
+To stop further calls, we should call clearInterval(timerId)2.
+
+ex- function myTimer() {
+  const d = new Date();
+  console.log(d.toLocaleTimeString());
+}
+setInterval(myTimer, 1000); // Logs the current time every second
+
+35.Asynchronous JavaScript is a form of JavaScript that allows the program to be executed immediately where the synchronous code will block further execution of the remaining code until it finishes the current one1. This means that JavaScript can start long-running tasks and continue running other tasks in parallel.
+
+36. The execution of JavaScript code involves several steps
+1. **Loading Source Code**: The JavaScript engine loads the source code.
+2. **Memory Allocation Phase**: In this phase, all the functions and variables of the JavaScript code get stored as key-value pairs inside the memory component of the execution context¹. In the case of a function, JavaScript copies the whole function into the memory block but in the case of variables, it assigns `undefined` as a placeholder¹.
+3. **Code Execution Phase**: In this phase, the JavaScript code is executed one line at a time inside the Code Component (also known as the Thread of execution) of Execution Context¹. JavaScript is a synchronous and single-threaded language, which means it executes one command at a time in a specific order¹. If a new function is called during this phase, a new Execution Context is created¹.
+4. **Optimization and Compilation**: The compiler starts optimization and compilation³. The compiler incrementally optimizes the code³.
+5. **Execution**: The interpreter starts the application³. The JavaScript engine will parse the code line by line, convert it into machine code and then execute it⁴.
+
+ex- 
+var number = 2;
+function Square (n) {
+  var res = n * n;
+  return res;
+}
+var newNumber = Square (3);
+
+In this example, when we run this program, a Global Execution Context is created. So, in the Memory Allocation phase, the memory will be allocated for these variables and functions¹. Then, in the Code Execution Phase of the newly created Execution Context, the global Execution Context will look like the following¹
+Global Execution Context
+number: 2
+res: 4
+newNumber: 4
+
+37.Destructuring in JavaScript is a syntax that allows you to unpack values from arrays or properties from objects into distinct variables. 
+array destructuring ex -
+const vehicles = ['mustang', 'f-150', 'expedition'];
+const [car, truck, suv] = vehicles;
+
+object destructuring ex -
+const vehicleOne = {
+  brand: 'Ford',
+  model: 'Mustang',
+  type: 'car',
+  year: 2021,
+  color: 'red'
+}
+const {brand, model, type, year, color} = vehicleOne;
+
+38. In JavaScript, a prototype is an object associated with every function and object by default12. It’s an invisible property that exists with all functions2. When you create a function, the JavaScript engine adds a prototype property to it3. This prototype property is an object (also known as the Prototype object), where you can attach methods and properties3.
+ex- function Person(name, job, yearOfBirth) {
+  this.name = name;
+  this.job = job;
+  this.yearOfBirth = yearOfBirth;
+}
+
+Person.prototype.calculateAge = function() {
+  console.log('The current age is: ' + (2019 - this.yearOfBirth));
+}
+
+let Person1 = new Person('Jenni', 'clerk', 1986);
+let Person2 = new Person('Madhu', 'Developer', 1997);
+
+Person1.calculateAge();
+Person2.calculateAge();
+
