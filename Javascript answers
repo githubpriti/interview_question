@@ -86,3 +86,37 @@ var varNumber = 1;
 let letNumber = 1;
 letNumber is in the Temporal Dead Zone from the start of its scope until it’s declared.
 
+11.
+Scope:
+var declarations are globally scoped or function scoped.
+let and const are block scoped, meaning they can only be accessed within the block they were declared12.
+
+Re-declaration and Updating:
+var variables can be updated and re-declared within its scope12.
+let variables can be updated but not re-declared12.
+const variables can neither be updated nor re-declared12.
+
+Hoisting:
+All three (var, let, and const) are hoisted to the top of their scope. But while var variables are initialized with a value of undefined, let and const variables are not initialized.
+
+12. Pausing Code Execution: When the JavaScript interpreter encounters the debugger keyword, it pauses the execution of the code123. This allows you to inspect the current state of the code, check variable values, and understand the flow of execution1.
+Calling Debugging Function: If a debugging tool is available and turned on, the debugger keyword calls the debugging function12. If no debugging tool is available, the debugger statement has no effect2.
+Setting Breakpoints: The debugger keyword acts as a breakpoint in the code. A breakpoint is a spot in your code where you want to pause execution.
+
+In this example, when the JavaScript interpreter encounters the debugger keyword, it will pause execution of the script before executing the third line2. You can then inspect the values of variables and step through your code from that point
+
+13. In programming, a function is a self-contained block of code designed to perform a particular task4. A function typically takes some inputs (called arguments or parameters), performs some operations, and returns an output (though not all functions return values). Functions help in structuring code, avoiding repetition, and improving readability4.
+ex- function greet(name) {
+    return "Hello, " + name;
+}
+console.log(greet("Alice"));  // Outputs: Hello, Alice
+
+14. An Immediately Invoked Function Expression (IIFE, pronounced “iffy”) is a JavaScript function that runs as soon as it is defined12. It’s a programming language idiom which produces a lexical scope using function scoping3. 
+syntax -  (function () {
+    // Function Logic Here.
+})();
+
+Function Expressions: A Function Expression is a Function that is used as an expression1. The first part of the IIFE contains a Function Expression while the final part invokes it immediately1.
+
+
+15. 
