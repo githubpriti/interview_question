@@ -98,3 +98,93 @@ HTTP-EQUIV Meta Tag: This attribute provides an HTTP header for the information/
 
 15. Semantic elements in HTML are those that clearly describe their meaning in a human- and machine-readable way. They are elements of code that use words to clearly represent what that element contains. 
 Ex : <footer> , <form> , <table> , <details> , <header> , <figure>
+
+16. <progress> Tag: This tag is used to represent a progress bar on a webpage to show the progress of a task. It’s often used to show the progress of file uploads or downloads. It has two main attributes - 
+max : represents the total work tht needs to be done to complete a task.  
+value : Represents the amount of work that has already been completed.
+
+<meter> Tag: Also known as a gauge, this tag defines a scale for the measurement of data within a specified range. It can be used to represent things like the fuel left in a tank or the temperature of an object.
+It has following attribute - min, max, high, low, optimum, value
+
+17. <svg> (Scalable Vector Graphics):
+SVG is an XML-based image format that is used to define two-dimensional vector-based graphics for the web.
+Unlike raster image (Ex .jpg, .gif, .png, etc.), a vector image can be scaled up or down to any extent without losing the image quality.
+SVG images can be created and edited with any text editor, such as Notepad.
+Every SVG element is appended to the Document Object Model (DOM) and can be manipulated using a combination of JavaScript and CSS5.
+You can attach JavaScript event handlers for an SVG element.
+If attributes of an SVG object are changed, the browser can automatically re-render the shape.
+
+<canvas>:
+The <canvas> element is used to draw graphics on the fly, via scripting (usually JavaScript).
+The <canvas> element is only a container for graphics. You must use a script to actually draw the graphics.
+Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
+Canvas is a simple graphics API.
+Canvas diagrams are pixel-oriented and once the pixels hit the screen, that is your drawing.
+You cannot change shapes in canvas except by overwriting them with other pixels.
+
+18. Web Storage is a feature of HTML5 that allows web apps to store data locally within the user’s browser. It stores data in the form of key/value pairs. Web Storage is sometimes also known as DOM storage.
+There are two types of web storage with different scope and lifetime:
+Local Storage: Local Storage uses the window.localStorage object which stores data and is available for every page. The data persists even if the browser is closed and reopened.
+Session Storage: Session Storage uses the window.sessionStorage object which stores data for one session. The data will be lost if the window or browser tab is closed1.
+
+19.In HTML, comments are used to insert notes into the source code which are not displayed in the browser. They can help document your HTML source code. Comments in any code make the code easy to understand and increase readability.
+The syntax for HTML comments is <!-- Write your comments here -->.
+There are 3 types of html comment-
+1. Single-line Comments: A single-line comment spans one line.
+2. Inline Comments: In HTML, we can add comments in the middle of a line of code or sentence.
+3. Multi-lines Comments: Multi-line comments are those that span multiple lines.
+
+20. Empty elements in HTML are elements that do not have any content or closing tags123. They are also known as self-closing.
+Ex : <br>, <img>, <input>, <link> , <hr>, 
+
+21. Advantages:
+1. Readability: While you are writing the HTML for your web page, you want the code to be more understandable and readable to the users. Because the browser collapses multiple spaces into a single space, you can indent lines of text without worrying about multiple spaces within the HTML code.
+2. Efficiency: Collapsing white spaces decreases the transmission time between the server and the client because collapsing features remove unnecessary bytes that are occupied by the white spaces.
+3. Error Handling: By mistake, if you leave extra white space, the browser will ignore it and display the UI perfectly.
+
+22. A hyperlink, also known as a link or web link, is an element in an HTML document that contains an address for a destination and acts as a reference to data1. A hyperlink can be a piece of text, an image, an icon, or a graphic that, when you click on it, points to and navigates you to a different webpage or document1. It can also point to a specific section or element within the same webpage or document.
+Need for  hyperlink:
+1.Navigation : A hyperlink, also known as a link or web link, is an element in an HTML document that contains an address for a destination and acts as a reference to data. A hyperlink can be a piece of text, an image, an icon, or a graphic that, when you click on it, points to and navigates you to a different webpage or document. It can also point to a specific section or element within the same webpage or document.
+2.Connectivity: They give us the ability to connect a document to another document across different computers and networks.
+3.User Experience: Without hyperlinks, you would need to know each and every URL (Uniform Resource Locator) of every webpage on the Internet in order to visit them.
+
+23.alt tag, is used within the <img> tag in HTML to provide alternative text for an image If an image fails to load on a webpage, the text within the alt attribute will be displayed in place of that image.
+
+24. HTML (Hypertext Markup Language) and XHTML (Extensible Hypertext Markup Language) are both markup languages used for creating web pages, but they have some key differences:
+
+HTML is the most widely used language over the internet for creating web pages.
+It has a more relaxed syntax compared to XHTML, which makes it easier to code.
+HTML is designed to be backward compatible with older versions of HTML.
+It includes support for multimedia elements such as video and audio.
+However, HTML5 is not a standardized markup language, which means that different web browsers may interpret it differently.
+
+XHTML stands for Extensible Hypertext Markup Language and can be considered as a part of the XML markup language1.
+It has a stricter syntax compared to HTML5, which means that it is more structured and easier to read1.
+XHTML follows the syntax rules of XML, which is a standardized markup language.
+However, XHTML is not backward compatible with older versions of HTML, which means that some older web browsers may not be able to display XHTML documents properly.
+
+25. Absolute URL: An absolute URL contains all the info necessary to locate a resource. It includes the protocol (like http:// or https://), the domain name (like www.example.com), and the location within your website in your folder system (like /foldernameA or /foldernameB) names within the URL. Basically, it’s the full URL of the page that you link to. An example of an absolute URL is: http://www.example.com/xyz.html.
+Relative URL: A relative URL, on the other hand, does not use the full web address and only contains the location following the domain. It assumes that the link you add is on the same site and is part of the same root domain. The relative path starts with the forward slash and leads the browser to stay within the current site. An example of a relative URL is: /xyz.html1.
+
+Relative URLs can make coding quicker, especially for large websites, and can result in faster load times. However, absolute URLs can make it harder for people to scrape information from your site directory using scraper programs.
+
+26. The action attribute in HTML forms plays a crucial role. It specifies where to send the form-data when a form is submitted.
+
+27.The method attribute in HTML forms specifies the HTTP method used to send data while submitting the form. There are two main types of HTTP methods that can be used which are:
+GET: In the GET method, the form data is appended into the URL in name/value pairs. The length of a URL is limited (about 3000 characters). It is only useful for non-secure data. The GET method is useful for form submissions where a user wants to bookmark the result.
+POST: In the POST method, the form data is appended inside the body of the HTTP request. The data is not shown in the URL and it has no size limitations. Form submissions with POST cannot be bookmarked.
+
+28. The <marquee> tag in HTML is used to create scrolling text or images within a web page. The content can scroll from left to right, right to left, top to bottom, or bottom to top. Here are some of the attributes of the <marquee> tag:
+width, height, scrollamount, direction,  scrolldelay, bgcolor, loop, behavior, hspace, vspace
+
+29.Grouping tags in HTML are used to group together related elements. They help in organizing the structure of the content and make it easier to style or manipulate the webpage with HTML, CSS, or JavaScript1. Here are some examples of grouping tags:
+<div>: It is a block-level tag that groups various HTML tags into a single block.
+<header>: This tag contains the main heading or the navigation links of our web page and is placed at the top of our web page.
+<section>: This tag is used to define a section in the document.
+
+30. Accesibility in HTML refers to the practice of making web content accessible to all users, including those with disabilities. It involves ensuring that content remains accessible, regardless of who and how the web is accessed. Here are some key aspects of accessibility in HTML:
+
+Semantic HTML: Using the correct HTML elements for their intended purpose as much as possible12. This gives context to screen readers, which read the contents of a page out loud1. For example, using the <button> element for a button instead of a <div> element1.
+Alternative Text: The alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader)1.
+Language Declaration: You should always include the lang attribute inside the <html> tag, to declare the language of the Web page1.
+Headings: Headings are defined with the <h1> to <h6> tags. 
