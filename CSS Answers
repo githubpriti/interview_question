@@ -93,4 +93,213 @@ vh: Relative to 1% of the height of the viewport
 vmin: Relative to 1% of viewport’s smaller dimension
 vmax: Relative to 1% of viewport’s larger dimension
 
-8.  
+8. The CSS box model is a fundamental concept in web development that is used when talking about design and layout. It’s essentially a box that wraps around every HTML element.
+Components of model: Content: This is the area where text, images, or other media forms appear1.
+Padding: This clears an area around the content. The padding is transparent1.
+Border: A border that goes around the padding and content1.
+Margin: This clears an area outside the border. The margin is also transparent1.
+
+9. Relative position : It simply means wherever I am just move me from that place , means what you do it will done from its current position. An element with position: relative; is positioned relative to its normal position.
+ Absolute position: It means I don't care wherever my original position is I just want to move from my original parent and if parent has nothing then move me from their parent . It behaves based on his current position. An element with position: absolute; is positioned relative to the nearest positioned ancestor.
+
+10. The float property specifies whether an element should float to the left, right, or not at all. 
+The general syntax of the float property is float: none|left|right|initial|inherit;.
+none: The element does not float (will be displayed just where it occurs in the text). This is default2.
+left: The element floats to the left of its container2.
+right: The element floats to the right of its container2.
+initial: Sets this property to its default value2.
+inherit: Inherits this property from its parent element2.
+
+11. The z-index is a CSS property that sets the z-order of a positioned element and its descendants or flex and grid items1. It defines the order of overlapping HTML elements2. Elements with a larger z-index cover those with a smaller one1.
+Please note that the z-index property only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements)32.
+
+12. visibility: hidden: This property hides the element, but it still takes up space in the layout. The element is not visible, but it still occupies space and affects the layout. Child elements of a hidden box will be visible if their visibility is set to visible.
+display: none: This property removes the element completely from the document. It turns off the display and does not take up any space, even though the HTML for it is still in the source code. The element will not appear on the page at all and there will be no space allocated for it between the other tags.
+
+13. CSS Transitions: Transitions allow you to change property values smoothly over a specified duration. They are generally best for simple from-to movements. Transitions need a trigger to run, like mouse hover. They can only move from initial to final state — no intermediate steps.
+div {
+  width: 100px;
+  height: 100px;
+  transition: width 2s;
+}
+CSS Animations: Animations allow you to animate HTML elements12. They can move from initial to final state, with intermediate steps in between12. Animations can loop infinitely thanks to the animation-iteration-count property2. They can be triggered but can also run automatically.
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+@keyframes example {
+  0% {background-color: red;}
+  50% {background-color: blue;}
+  100% {background-color: yellow;}
+}
+
+A transition is simpler and is used for a single state change (from-to). It requires a trigger to start.
+An animation is more complex and allows multiple state changes with various properties
+
+14.CSS frameworks are libraries that use the CSS language to make web design easier and more standards-compliant1. They usually have a grid system and some also have more features and UI elements1.
+Its importance:
+Speed up the development process
+Easy Maintenance
+Search Engines
+Offline Browsing: 
+
+15.The @keyframes rule in CSS is used to create animations by specifying the animation sequence12. It controls the intermediate steps in a CSS animation sequence by defining styles for keyframes (or waypoints) along the animation sequence23. This gives more control over the intermediate steps of the animation sequence than transitions.
+
+16.The @media rule in CSS is used to apply different styles for different media types or devices. It’s a part of CSS media queries, which are a popular technique for delivering a responsive web design. 
+ex:
+@media screen and (min-width: 900px) {
+  article {
+    padding: 1rem 3rem;
+  }
+}
+
+17. In CSS, functions are used as a value for various CSS properties12. They allow you to invoke special data processing or calculations to return a CSS value for a CSS property2. They represent more complex data types and they may take some input arguments to calculate the return value2.
+ex of function - calc(), attr(), rgb(), rgba(), var()
+
+18. Responsive web design is a design approach that makes your web page look good on all devices1. It uses only HTML and CSS1. It’s not a program or a JavaScript1. Responsive web design works through Cascading Style Sheets (CSS), using various settings to serve different style properties depending on the screen size, orientation, resolution, color capability, and other characteristics of the user’s device3.
+
+19. A CSS preprocessor is a program that lets you generate CSS from the preprocessor’s own unique syntax1. It provides advanced features such as variables, functions, and nesting2. This helps developers write CSS more effectively. In summary, a CSS preprocessor is an extension of CSS that allows developers to write leaner, faster products with more features while spending less time on the whole process than they would with plain CSS.
+
+20. Pseudo-Classes (:): Pseudo-classes are primarily used to style an element that’s under various states1. When referring to state, this includes the condition or user behavior, for example hover, active, focus, or disabled1. States generally involve user interaction1. For example, we can target all links to have a text color of lavender when the user hovers over the link1.
+ex- a:hover { 
+  color: lavender; 
+}
+Pseudo-Elements (::): Pseudo-elements are used to style specified parts of an element1. They can be used to target the first letter or first line. Or they can be used to insert content before or after the element1. For example, to create a large first letter of a paragraph, you can do that using first-letter like this1:
+ex - p::first-letter { 
+  font-size: 200%; 
+  color: red; 
+}
+
+21. 
+1. Choose the font: Visit the Google Fonts website and choose the font you want to use.
+2. Add a stylesheet link: Add a special stylesheet link in the <head> section of your HTML file. This link requests the desired web font from Google1. 
+Ex - Sofia 
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+3. Refer to the font in CSS: Now you can refer to this font in your CSS by its name1.
+Ex- <style>
+body {
+  font-family: "Sofia", sans-serif;
+}
+</style>
+
+** You can also request multiple fonts by separating the font names with a pipe character (|), like this 
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+</head>
+
+22. This are two different values of the box-sizing property in CSS. Here’s a more detailed explanation:
+content-box: This is the default value of box-sizing. The dimension of an element only includes the height and width, and does not include the border and padding given to the element1. Padding and Border take space outside the element1.
+border-box: In this value, not only width and height properties are included but you will find padding and border inside of the box1
+
+23. CSS Grid is a two-dimensional layout that you can use for creating responsive items on the web. The Grid items are arranged in columns, and you can easily position rows without having to mess around with the HTML code.
+CSS Flexbox: Flexbox offers a one-dimensional layout1. It is helpful in allocating and aligning space among items in a container (made of grids)1. It works with all kinds of display devices and screen sizes1.
+
+24. It is used to add more importance to a property/value than normal1. If you use the !important rule, it will override all previous styling rules for that specific property on that element1. The !important rule must be set at the end of the line, directly before the semicolon1.
+ex -  p {
+  color: blue;
+  color: red !important;
+}
+However, it’s important to note that using !important should be avoided if possible because it makes debugging more difficult and can create confusion in your CSS code1.
+
+25. CSS Specificity is a set of rules that browsers follow to decide which CSS property values will be applied to an element when there are conflicts12. It’s like a score/rank that determines which style declaration is ultimately applied to an element1.
+Inline styles: Inline styles have the highest specificity and are given a value of 1000.
+IDs: Each ID selector increases the specificity value by 100.
+Classes, pseudo-classes, attribute selectors: Each class selector, pseudo-class, or attribute selector increases the specificity value by 10.
+Elements and pseudo-elements: Each element selector or pseudo-element increases the specificity value by 1.
+
+26. Color Names: CSS supports 140 standard color names. For example, color: Tomato;.
+Hexadecimal (HEX) Values: Colors can be specified using hexadecimal values. For ex, color: #ff6347; represents the color Tomato.
+RGB Values: Colors can be specified using RGB (Red, Green, Blue) values. For example, color: rgb(255, 99, 71); also represents the color Tomato1.
+HSL Values: Colors can be specified using HSL (Hue, Saturation, Lightness) values. For example, color: hsl(9, 100%, 64%); represents the color Tomato1.
+RGBA Values: This is an extension of RGB with an alpha channel - which specifies the opacity of the object. For example, color: rgba(255, 99, 71, 0.5); represents the color Tomato with 50% transparency.
+HSLA Values: This is an extension of HSL with an alpha channel - which specifies the opacity of the object. For example, color: hsla(9, 100%, 64%, 0.5); represents the color Tomato with 50% transparency.
+
+27. Margin collapse occurs when the top and bottom margins of blocks are sometimes combined (collapsed) into a single margin whose size is the largest of the individual margins (or just one of them, if they are equal), a behavior known as margin collapsing.
+Margin collapsing only happens to block-level elements4.
+
+28. CSS Grid- CSS Grid is a two-dimensional layout that you can use for creating responsive items on the web. The Grid items are arranged in columns, and you can easily position rows without having to mess around with the HTML code.
+Table: Tables are a more basic form of data structure that consists of columns and rows without allowing for comparison across different values within each column or row3.
+
+29. Box-Shadow: The box-shadow property creates a rectangular shadow behind an element’s entire box12. It affects the entire box of an element.
+Drop-Shadow: The drop-shadow() filter function creates a shadow that conforms to the shape (alpha channel) of the image itself.
+
+30. Link (a:link): This is the unvisited state when the user is yet to click on the link.
+Visited (a:visited): The state where the user has visited the link at least once.
+Hover (a:hover): The state when the mouse is hovering over the link.
+Active (a:active): The state where the link is clicked but is yet to navigate the user to the destination href address.
+
+ ex- /* unvisited link */
+a:link {
+  color: red;
+}
+
+31. RGB: It stands for Red, Green, and Blue. In CSS, a color can be specified as an RGB value, using this formula: rgb(red, green, blue)1. Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.
+RGBA: It stands for Red, Green, Blue, and Alpha. An RGBA color value is an extension of RGB with an Alpha channel - which specifies the opacity for a color123. An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all).
+
+ex- /* RGB */
+p {
+  color: rgb(255, 0, 0); /* Red */
+}
+
+/* RGBA */
+p {
+  color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
+}
+
+33. CSS Sprites: An image sprite is a collection of images put into a single image.
+A web page with many images can take a long time to load and generates multiple server requests.
+Using image sprites will reduce the number of server requests and save bandwidth.
+
+34. all: Used for all media type devices2.
+print: Used for printers2.
+screen: Used for computer screens, tablets, smart-phones etc2.
+speech: Used for screenreaders that “reads” the page out loud2.
+
+These media types are used in conjunction with the @media rule to apply different style rules for different media types2
+ex- @media screen {
+  body { font-size: 13px; }
+}
+
+@media print {
+  body { font-size: 10pt; }
+}
+
+35. BEM, which stands for Block, Element, and Modifier, is a naming convention for classes in HTML and CSS. It’s a methodology for creating reusable CSS. The goal of BEM is to help developers better understand the relationship between the HTML and CSS in a given project.
+- Block: Encapsulates a standalone entity that is meaningful on its own.
+Element: Parts of a block and have no standalone meaning. Any element is semantically tied to its block.
+Modifier: A flag on a block or element.
+
+ex- /* Block component */
+.btn {}
+
+/* Element that depends upon the block */
+.btn__price {}
+
+/* Modifier that changes the style of the block */
+.btn--orange {}
+.btn--big {}
+
+36. Flex Container: A flex container is an HTML element whose display property’s value is set to flex or inline-flex. When you set an element’s display property to flex, it becomes a flex container, and its direct children become flex items. The flex container properties include flex-direction, flex-wrap, flex-flow, justify-content, align-items, and align-content.
+Flex Items: Flex items are the direct children of a flex container12345. They automatically become flexible and adapt their size and position based on the space available in the flex container12345. The flex item properties include order, flex-grow, flex-shrink, flex-basis, flex, and align-self2.
+
+37.align-items: This property aligns the items inside a flex container along the cross axis1. It’s similar to justify-content, but instead of aligning the flex container’s lines within it when there is extra space in the cross-axis, align-items aligns the items within each line1. For example, if you have a single row of items, align-items can be used to specify how these items align vertically1.
+align-content: This property is used with multi-line flexible containers, where there is a need to control the space between the lines1. It has no effect when items are in a single line1. It aligns the whole structure according to its value1. For example, if you have a flex container with multiple rows of items, align-content can be used to distribute space between the rows1.
+
+align-items is used for alignment of items within a single line, while align-content is used for alignment of multiple lines within a flex container1.
+
+38.WebKit is a web browser rendering engine used by Safari and Chrome1. It’s an open-source framework that allows browsers to render web pages12.
+The -webkit- prefix in CSS is used for properties that are specific to the WebKit rendering engine.
+
+39.  The box-sizing: border-box property includes padding and border in an element’s total width and height. the box-sizing: border-box; property is used to include padding and borders in an element’s total width and height, making it much easier to size elements.
+
+40. SASS (Syntactically Awesome Style Sheets) and LESS (Leaner CSS) are both CSS preprocessors, which means they extend the default capabilities of CSS12.
+Language Base: SASS is based on Ruby, while LESS is JavaScript-based12.
+Error Reporting: LESS has very precise error reporting along with indicating the exact location of the error1. SASS also actively reports errors made in syntax1.
+Mixins: SASS uses the Compass extension for implementing mixins, while LESS uses Preboot.less extension for the implementation of mixins1.
+Variables: SASS uses $ for variables, while LESS uses @ for variables1.
