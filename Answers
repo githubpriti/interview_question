@@ -4,38 +4,54 @@ HTML Answers
 Elements enclose the contents in between the tags. They consist of some kind of structure. It generally consists of a start tag, content and an end tag.
 It is used to define the character of an HTML element. It always placed in the opening tag of an element. It generally provides additional styling (attribute) to the element.
 
-2. HTML entities are used to display reserved, special or invisible characters in HTML. These are particularly useful when you want to include symbols like < (less than) or > (greater than) in your text, as the browser might confuse them with tags.
+2. HTML entities are used to display reserved, special or invisible characters in HTML. These are particularly useful when you want to
+include symbols like < (less than) or > (greater than) in your text, as the browser might confuse them with tags.
 
 Here’s an example of how you might use an HTML entity:
 <p>This is a &lt;p&gt; tag.</p>
-In the above example, &lt; and &gt; are HTML entities representing the less than and greater than symbols respectively. There are many more HTML entities.
+In the above example, &lt; and &gt; are HTML entities representing the less than and greater than symbols respectively. 
+
+There are many more HTML entities.
+ex- 
+<h2>The ampersand (and) sign: &amp;</h2>
+In the above ex , The ampersand (and) sign: &
 
 3.There are three types of lists:
--An unordered list starts with the <ul> tag. Each list item starts with the <li> tag. The list items will be marked with bullets by default.
+-An unordered list starts with the <ul> tag. Each list item starts with the <li> tag. The list items will be marked with bullets by 
+default.
 -An ordered list starts with the <ol> tag. Each list item starts with the <li> tag. The list items will be marked with numbers by default.
--A description list is a list of terms, with a description of each term. The <dl> tag defines the description list, the <dt> tag defines the term , and the <dd> tag describes each term.
+-A description list is a list of terms, with a description of each term. The <dl> tag defines the description list, the <dt> tag
+defines the term , and the <dd> tag describes each term.
 
-4.The id attribute is used to identify a unique HTML element, while the class attribute is used to specify a group of elements that share the same style or behavior.
+4.The id attribute is used to identify a unique HTML element, while the class attribute is used to specify a group of elements that 
+share the same style or behavior.
 The id attribute must have a unique value in the whole document, while the class attribute can have the same value for multiple elements.
 The id attribute must not contain whitespace, while the class attribute allows space-separated values.
 The id attribute can only be applied to one element in a page, while the class attribute can be applied to several elements on a single page
 
-5. The formatting can be used to set the text styles (like – bold, italic, or emphasized, etc.), highlight the text, make text superscript and subscript, etc.
+5. The formatting can be used to set the text styles (like – bold, italic, or emphasized, etc.), highlight the text, make text 
+superscript and subscript, etc.
 ex of formatting tag - <b> <strong> <i> <em> <mark>
 
-6. The <!DOCTYPE html> declaration defines that this document is an HTML5 document. It is used to inform the browser about the version of HTML used in the document.
+6. The <!DOCTYPE html> declaration defines that this document is an HTML5 document. It is used to inform the browser about the version
+of HTML used in the document.
 
 7. The <head> element contains meta-information about the HTML page.
 The <body> element defines the document's body and is a container for all the visible contents, such as headings, paragraphs, etc.
 
-8. Inline elements: Inline elements occupy only enough width that is sufficient to it and allows other elements next to it which are inline. Inline elements don’t start from a new line and don’t have top and bottom margins as block elements have.
+8. Inline elements: Inline elements occupy only enough width that is sufficient to it and allows other elements next to it which are 
+inline. Inline elements don’t start from a new line and don’t have top and bottom margins as block elements have.
 Ex- <a> , <br> , <span>
-Block elements: They consume the entire width available irrespective of their sufficiency. They always start in a new line and have top and bottom margins. It does not contain any other elements next to it.
+Block elements: They consume the entire width available irrespective of their sufficiency. They always start in a new line and have top
+and bottom margins. It does not contain any other elements next to it.
 Ex- <h1> , <div> , <p>
 
-9. The <link> tag is used to establish a relationship between the current document and some external resources that are associated with the webpage.
-The resource could be a CSS file, an icon used in the site, a manifest, etc. It has certain attributes like href, media, rel, size, and type. This tag is only used in the <head> section of an HTML document.
-The <a> tag, also known as the anchor tag, establishes a hyperlink to an external or internal document of HTML, an address like email or telephone, and some kind of external URL address.
+9. The <link> tag is used to establish a relationship between the current document and some external resources that are associated with
+the webpage.
+The resource could be a CSS file, an icon used in the site, a manifest, etc. It has certain attributes like href, media, rel, size, 
+and type. This tag is only used in the <head> section of an HTML document.
+The <a> tag, also known as the anchor tag, establishes a hyperlink to an external or internal document of HTML, an address like email 
+or telephone, and some kind of external URL address.
 Some of the commonly used attributes are href, target, download, and ping. This tag is used in the <body> section of an HTML document.
 
 10. HTML-
@@ -63,10 +79,13 @@ HTML5 language is more mobile-friendly.
 Doctype declaration is quite simple and easy.
 Character encoding is simple and easy.
 
-11. HTML forms are a crucial part of an HTML document that allows user interaction. They are used to collect user input that is most often sent to a server for processing. The <form> element in HTML is used to create a form. A form can contain various types of input elements, such as text fields, checkboxes, radio buttons, submit buttons, etc.
+11. HTML forms are a crucial part of an HTML document that allows user interaction. They are used to collect user input that is most 
+often sent to a server for processing. The <form> element in HTML is used to create a form. A form can contain various types of input 
+elements, such as text fields, checkboxes, radio buttons, submit buttons, etc.
 Forms are generally used when you want to collect data from the user.
 
-12. HTML provides various types of input fields through the <input> element, each with its own purpose. Here are some commonly used types:
+12. HTML provides various types of input fields through the <input> element, each with its own purpose. Here are some commonly used 
+types:
 - Text: The ‘text’ input field is used to enter single-line text.
 - Color: The <input type="color"> is used for input fields that should contain a color.
 There are other as well -
@@ -77,33 +96,45 @@ There are other as well -
 <input type="radio">
 
 13. HTML <figure> Tag:
-The <figure> tag in HTML5 is used to add self-contained content like illustrations, diagrams, photos, or code listings in a document. It is related to the main flow, but it can be positioned anywhere in the document and if removed, it should not affect the flow of the document1.
+The <figure> tag in HTML5 is used to add self-contained content like illustrations, diagrams, photos, or code listings in a document. 
+It is related to the main flow, but it can be positioned anywhere in the document and if removed, it should not affect the flow of the
+document1.
 It is used to semantically organize the content of images, videos, audios, or even charts or tables, block of codes in the HTML document.
+
 It contains mostly two tags: img src and figcaption.
 
 HTML <img> Tag1:
-The <img> tag is used to add an image or to set the background in a webpage/website. Images are linked to web pages by using the <img> tag which holds space for the image.
+The <img> tag is used to add an image or to set the background in a webpage/website. Images are linked to web pages by using the <img>
+tag which holds space for the image.
 It contains the following attribute values: src and alt.
 
-14. Meta tags are elements within your HTML code that aren’t visible to the user and yet play a crucial role in your SEO performance and the user experience you provide. They are important because they allow search engines to understand what your web page content is about. It gives info about meta data.
+14. Meta tags are elements within your HTML code that aren’t visible to the user and yet play a crucial role in your SEO performance 
+and the user experience you provide. They are important because they allow search engines to understand what your web page content is about. 
+It gives info about meta data.
 
-Title Tag: The title tag is the title text that is shown in search engine listings. It is only visible to users on the search results, but not within the page.
-Meta Description: The meta description tag is where you would want to put your site’s summary. It provides a brief overview of the content found on your webpage.
-Meta Keywords: The meta keywords tag is where you put all of the keywords you use on your site. These keywords help search engines understand the topics your content covers.
+Title Tag: The title tag is the title text that is shown in search engine listings. It is only visible to users on the search results,
+but not within the page.
+Meta Description: The meta description tag is where you would want to put your site’s summary. It provides a brief overview of the 
+content found on your webpage.
+Meta Keywords: The meta keywords tag is where you put all of the keywords you use on your site. These keywords help search engines 
+understand the topics your content covers.
 Meta Robots Tag: The meta robots tag tells search engines if and how they should crawl your web pages.
 Viewport Meta Tag: This tag is used to control how your webpage scales across different devices.
 Author Meta Tag: This tag allows you to specify the author of the webpage.
 Charset Meta Tag: This tag is used to indicate the character encoding for the HTML document.
 HTTP-EQUIV Meta Tag: This attribute provides an HTTP header for the information/value of the content attribute.
 
-15. Semantic elements in HTML are those that clearly describe their meaning in a human- and machine-readable way. They are elements of code that use words to clearly represent what that element contains. 
+15. Semantic elements in HTML are those that clearly describe their meaning in a human- and machine-readable way. They are elements of 
+code that use words to clearly represent what that element contains. 
 Ex : <footer> , <form> , <table> , <details> , <header> , <figure>
 
-16. <progress> Tag: This tag is used to represent a progress bar on a webpage to show the progress of a task. It’s often used to show the progress of file uploads or downloads. It has two main attributes - 
+16. <progress> Tag: This tag is used to represent a progress bar on a webpage to show the progress of a task. It’s often used to show 
+the progress of file uploads or downloads. It has two main attributes - 
 max : represents the total work tht needs to be done to complete a task.  
 value : Represents the amount of work that has already been completed.
 
-<meter> Tag: Also known as a gauge, this tag defines a scale for the measurement of data within a specified range. It can be used to represent things like the fuel left in a tank or the temperature of an object.
+<meter> Tag: Also known as a gauge, this tag defines a scale for the measurement of data within a specified range. It can be used to 
+represent things like the fuel left in a tank or the temperature of an object.
 It has following attribute - min, max, high, low, optimum, value
 
 17. <svg> (Scalable Vector Graphics):
@@ -122,12 +153,16 @@ Canvas is a simple graphics API.
 Canvas diagrams are pixel-oriented and once the pixels hit the screen, that is your drawing.
 You cannot change shapes in canvas except by overwriting them with other pixels.
 
-18. Web Storage is a feature of HTML5 that allows web apps to store data locally within the user’s browser. It stores data in the form of key/value pairs. Web Storage is sometimes also known as DOM storage.
+18. Web Storage is a feature of HTML5 that allows web apps to store data locally within the user’s browser. It stores data in the form 
+of key/value pairs. Web Storage is sometimes also known as DOM storage.
 There are two types of web storage with different scope and lifetime:
-Local Storage: Local Storage uses the window.localStorage object which stores data and is available for every page. The data persists even if the browser is closed and reopened.
-Session Storage: Session Storage uses the window.sessionStorage object which stores data for one session. The data will be lost if the window or browser tab is closed1.
+Local Storage: Local Storage uses the window.localStorage object which stores data and is available for every page. The data persists 
+even if the browser is closed and reopened.
+Session Storage: Session Storage uses the window.sessionStorage object which stores data for one session. The data will be lost if the
+window or browser tab is closed1.
 
-19.In HTML, comments are used to insert notes into the source code which are not displayed in the browser. They can help document your HTML source code. Comments in any code make the code easy to understand and increase readability.
+19.In HTML, comments are used to insert notes into the source code which are not displayed in the browser. They can help document your
+HTML source code. Comments in any code make the code easy to understand and increase readability.
 The syntax for HTML comments is <!-- Write your comments here -->.
 There are 3 types of html comment-
 1. Single-line Comments: A single-line comment spans one line.
@@ -138,19 +173,30 @@ There are 3 types of html comment-
 Ex : <br>, <img>, <input>, <link> , <hr>, 
 
 21. Advantages:
-1. Readability: While you are writing the HTML for your web page, you want the code to be more understandable and readable to the users. Because the browser collapses multiple spaces into a single space, you can indent lines of text without worrying about multiple spaces within the HTML code.
-2. Efficiency: Collapsing white spaces decreases the transmission time between the server and the client because collapsing features remove unnecessary bytes that are occupied by the white spaces.
+1. Readability: While you are writing the HTML for your web page, you want the code to be more understandable and readable to the users.
+Because the browser collapses multiple spaces into a single space, you can indent lines of text without worrying about multiple spaces within 
+the HTML code.
+2. Efficiency: Collapsing white spaces decreases the transmission time between the server and the client because collapsing features 
+remove unnecessary bytes that are occupied by the white spaces.
 3. Error Handling: By mistake, if you leave extra white space, the browser will ignore it and display the UI perfectly.
 
-22. A hyperlink, also known as a link or web link, is an element in an HTML document that contains an address for a destination and acts as a reference to data1. A hyperlink can be a piece of text, an image, an icon, or a graphic that, when you click on it, points to and navigates you to a different webpage or document1. It can also point to a specific section or element within the same webpage or document.
+22. A hyperlink, also known as a link or web link, is an element in an HTML document that contains an address for a destination 
+and acts as a reference to data1. A hyperlink can be a piece of text, an image, an icon, or a graphic that, when you click on it, 
+points to and navigates you to a different webpage or document1. It can also point to a specific section or element within the same webpage or document.
 Need for  hyperlink:
-1.Navigation : A hyperlink, also known as a link or web link, is an element in an HTML document that contains an address for a destination and acts as a reference to data. A hyperlink can be a piece of text, an image, an icon, or a graphic that, when you click on it, points to and navigates you to a different webpage or document. It can also point to a specific section or element within the same webpage or document.
+1.Navigation : A hyperlink, also known as a link or web link, is an element in an HTML document that contains an address for a
+destination and acts as a reference to data. A hyperlink can be a piece of text, an image, an icon, or a graphic that, when you click on
+it, points to and navigates you to a different webpage or document. It can also point to a specific section or element within the same 
+webpage or document.
 2.Connectivity: They give us the ability to connect a document to another document across different computers and networks.
-3.User Experience: Without hyperlinks, you would need to know each and every URL (Uniform Resource Locator) of every webpage on the Internet in order to visit them.
+3.User Experience: Without hyperlinks, you would need to know each and every URL (Uniform Resource Locator) of every webpage on the
+Internet in order to visit them.
 
-23.alt tag, is used within the <img> tag in HTML to provide alternative text for an image If an image fails to load on a webpage, the text within the alt attribute will be displayed in place of that image.
+23.alt tag, is used within the <img> tag in HTML to provide alternative text for an image If an image fails to load on a webpage,
+the text within the alt attribute will be displayed in place of that image.
 
-24. HTML (Hypertext Markup Language) and XHTML (Extensible Hypertext Markup Language) are both markup languages used for creating web pages, but they have some key differences:
+24. HTML (Hypertext Markup Language) and XHTML (Extensible Hypertext Markup Language) are both markup languages used for creating web 
+pages, but they have some key differences:
 
 HTML is the most widely used language over the internet for creating web pages.
 It has a more relaxed syntax compared to XHTML, which makes it easier to code.
@@ -161,30 +207,46 @@ However, HTML5 is not a standardized markup language, which means that different
 XHTML stands for Extensible Hypertext Markup Language and can be considered as a part of the XML markup language1.
 It has a stricter syntax compared to HTML5, which means that it is more structured and easier to read1.
 XHTML follows the syntax rules of XML, which is a standardized markup language.
-However, XHTML is not backward compatible with older versions of HTML, which means that some older web browsers may not be able to display XHTML documents properly.
+However, XHTML is not backward compatible with older versions of HTML, which means that some older web browsers may not be able to 
+display XHTML documents properly.
 
-25. Absolute URL: An absolute URL contains all the info necessary to locate a resource. It includes the protocol (like http:// or https://), the domain name (like www.example.com), and the location within your website in your folder system (like /foldernameA or /foldernameB) names within the URL. Basically, it’s the full URL of the page that you link to. An example of an absolute URL is: http://www.example.com/xyz.html.
-Relative URL: A relative URL, on the other hand, does not use the full web address and only contains the location following the domain. It assumes that the link you add is on the same site and is part of the same root domain. The relative path starts with the forward slash and leads the browser to stay within the current site. An example of a relative URL is: /xyz.html1.
+25. Absolute URL: An absolute URL contains all the info necessary to locate a resource. It includes the protocol
+(like http:// or https://), the domain name (like www.example.com), and the location within your website in your folder system 
+(like /foldernameA or /foldernameB) names within the URL. Basically, it’s the full URL of the page that you link to. 
+An example of an absolute URL is: http://www.example.com/xyz.html.
+Relative URL: A relative URL, on the other hand, does not use the full web address and only contains the location following the domain. 
+It assumes that the link you add is on the same site and is part of the same root domain. The relative path starts with the forward slash
+and leads the browser to stay within the current site. An example of a relative URL is: /xyz.html1.
 
-Relative URLs can make coding quicker, especially for large websites, and can result in faster load times. However, absolute URLs can make it harder for people to scrape information from your site directory using scraper programs.
+Relative URLs can make coding quicker, especially for large websites, and can result in faster load times. However, absolute URLs can 
+make it harder for people to scrape information from your site directory using scraper programs.
 
 26. The action attribute in HTML forms plays a crucial role. It specifies where to send the form-data when a form is submitted.
 
-27.The method attribute in HTML forms specifies the HTTP method used to send data while submitting the form. There are two main types of HTTP methods that can be used which are:
-GET: In the GET method, the form data is appended into the URL in name/value pairs. The length of a URL is limited (about 3000 characters). It is only useful for non-secure data. The GET method is useful for form submissions where a user wants to bookmark the result.
-POST: In the POST method, the form data is appended inside the body of the HTTP request. The data is not shown in the URL and it has no size limitations. Form submissions with POST cannot be bookmarked.
+27.The method attribute in HTML forms specifies the HTTP method used to send data while submitting the form. There are two main types 
+of HTTP methods that can be used which are:
+GET: In the GET method, the form data is appended into the URL in name/value pairs. The length of a URL is limited (about 3000 characters). 
+It is only useful for non-secure data. The GET method is useful for form submissions where a user wants to bookmark the result.
+POST: In the POST method, the form data is appended inside the body of the HTTP request. The data is not shown in the URL and it has no
+size limitations. Form submissions with POST cannot be bookmarked.
 
-28. The <marquee> tag in HTML is used to create scrolling text or images within a web page. The content can scroll from left to right, right to left, top to bottom, or bottom to top. Here are some of the attributes of the <marquee> tag:
+28. The <marquee> tag in HTML is used to create scrolling text or images within a web page. The content can scroll from left to right, 
+right to left, top to bottom, or bottom to top. Here are some of the attributes of the <marquee> tag:
 width, height, scrollamount, direction,  scrolldelay, bgcolor, loop, behavior, hspace, vspace
 
-29.Grouping tags in HTML are used to group together related elements. They help in organizing the structure of the content and make it easier to style or manipulate the webpage with HTML, CSS, or JavaScript1. Here are some examples of grouping tags:
+29.Grouping tags in HTML are used to group together related elements. They help in organizing the structure of the content and make it 
+easier to style or manipulate the webpage with HTML, CSS, or JavaScript1. Here are some examples of grouping tags:
 <div>: It is a block-level tag that groups various HTML tags into a single block.
 <header>: This tag contains the main heading or the navigation links of our web page and is placed at the top of our web page.
 <section>: This tag is used to define a section in the document.
 
-30. Accesibility in HTML refers to the practice of making web content accessible to all users, including those with disabilities. It involves ensuring that content remains accessible, regardless of who and how the web is accessed. Here are some key aspects of accessibility in HTML:
+30. Accesibility in HTML refers to the practice of making web content accessible to all users, including those with disabilities. 
+It involves ensuring that content remains accessible, regardless of who and how the web is accessed. Here are some key aspects of 
+accessibility in HTML:
 
-Semantic HTML: Using the correct HTML elements for their intended purpose as much as possible12. This gives context to screen readers, which read the contents of a page out loud1. For example, using the <button> element for a button instead of a <div> element1.
-Alternative Text: The alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader)1.
+Semantic HTML: Using the correct HTML elements for their intended purpose as much as possible12. This gives context to screen readers,
+which read the contents of a page out loud1. For example, using the <button> element for a button instead of a <div> element1.
+Alternative Text: The alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow 
+connection, an error in the src attribute, or if the user uses a screen reader)1.
 Language Declaration: You should always include the lang attribute inside the <html> tag, to declare the language of the Web page1.
 Headings: Headings are defined with the <h1> to <h6> tags. 
