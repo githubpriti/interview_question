@@ -87,4 +87,66 @@ npm install <package>
 
 Replace <package> with the name of the package you want to install2.
 
-7. 
+7.  **npm** and **Yarn** are both package managers for JavaScript, but they have some differences:
+
+1. **Installation Procedure**: npm is installed with Node.js automatically, while Yarn needs to be installed separately using npm⁶.
+2. **Lock File**: npm generates a `package-lock.json` file, while Yarn generates a `yarn.lock` file. These files ensure that the same 
+dependencies are installed across all environments⁶.
+3. **Output Log**: npm creates detailed output logs of commands, while Yarn's output logs are cleaner, more visually distinguishable, 
+and brief⁶.
+4. **Global Dependencies**: The command templates for installing global packages are different for npm and Yarn⁶.
+5. **'Why' Command**: Yarn has a 'why' command that explains why a dependency is present in the project. npm does not have this 
+functionality⁶.
+6. **License Checker**: Yarn has a license checker, while npm does not⁶.
+7. **Fetching Packages**: npm fetches dependencies from the npm registry during every 'npm install' command, while Yarn stores 
+dependencies locally and fetches from the disk during a 'yarn add' command⁶.
+
+As for which one to use, it depends on your specific needs:
+- If you need a fast and reliable package installation process, then Yarn is a great choice⁴.
+- However, if you have limited storage space, then npm may be the better option⁴.
+- Additionally, Yarn is better due to its built-in security features if security is a concern⁴.
+- On the other hand, npm is better for developers that are used to it and satisfied with its current workflow³.
+
+In conclusion, both npm and Yarn have their own strengths and weaknesses, and the choice between the two often comes down to personal 
+preference or specific project requirements. It's also worth noting that both are being actively developed and improved, so the gap
+between the two is continuously narrowing¹.
+
+8. The `package.json` and `package-lock.json` files are both crucial in a Node.js environment, but they serve different purposes:
+
+**package.json**:
+- **Project Configuration**: `package.json` serves as a manifest file for Node projects, containing metadata about the project and its dependencies. It includes information such as the project name, version, entry point, scripts, and dependencies¹.
+- **Dependency Management**: Dependencies are listed in the “dependencies” section, specifying the packages required for the project to run. Developers can use the `npm install` command to install dependencies listed in the `package.json`¹.
+- **Version Management**: Versions of dependencies may be specified with semantic versioning (SemVer) rules in the `package.json`. This file is typically committed to version control systems (e.g., Git) to share project configurations¹.
+
+**package-lock.json**:
+- **Dependency Locking**: `package-lock.json` is an auto-generated file that provides a detailed, deterministic record of the dependency tree. It locks down the specific versions of every installed package, preventing unintended updates¹.
+- **Version Consistency**: This file ensures that every developer working on the project, as well as the CI/CD system, uses the exact same versions of dependencies. Guarantees consistent builds across different environments, avoiding “it works on my machine” issues¹.
+- **Improved Installation Speed**: `package-lock.json` optimizes dependency installation by storing a flat node_modules structure, reducing the need for deep dependency resolution during installation. This results in faster and more reliable installations¹.
+
+In summary, `package.json` is a manually created file that contains metadata, dependency listings, and project configurations. It is maintained and updated by developers. On the other hand, `package-lock.json` is automatically generated and records the exact dependency versions and their resolved details³. Both files work together to ensure that the Node.js environment is consistent and controlled.
+
+9. In React, a **component** is a reusable, independent block of code that returns HTML elements to be rendered on the web page⁵. Components are the core building blocks of a React application³. They can be thought of as functions that take in parameters (called `props`) and return a React element that describes what should appear on the screen⁴.
+
+Components in React come in two types: **Class components** and **Function components**²:
+
+- **Class Components**: These are ES6 classes that extend from `React.Component`. They must include a `render` method which returns HTML¹. Here's an example of a class component:
+
+```jsx
+class Greeting extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}!</h1>;
+  }
+}
+```
+
+- **Function Components**: These are simple JavaScript functions that return HTML. They are easier to read and test because they are plain JavaScript functions without state or lifecycle-hooks². Here's an example of a function component:
+
+```jsx
+function Greeting(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+```
+
+In both examples, `{props.name}` is a placeholder for any name that we might want to render. When we want to render our `Greeting` component, we can specify the name we want to render by passing a `name` prop to it like so: `<Greeting name="Sarah" />`.
+
+React components help in building UIs in an easier and more efficient way by allowing developers to reuse code and divide their project into manageable parts⁴.
